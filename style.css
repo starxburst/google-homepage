@@ -12,8 +12,11 @@ header {
 }
 
 footer {
-    position: fixed;
+    padding-top: 5px;
+    position: absolute;
+    left: 0px;
     bottom: 0px;
+    text-align: center;
     display: flex;
     flex-direction: row;
     width: 100%;
