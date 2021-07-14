@@ -1,19 +1,35 @@
 body {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(32,33,36,1);
     font-family: arial,sans-serif;
 }
 
 header {
     display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
-ul{
+ul {
     list-style-type: none;
     font-size: 14px;
+    display: flex;
+    float:left;
 }
 
+.float-left {
+    margin-right: auto;
+
+}
+
+.float-right {
+    margin-left: auto;
+}
+
+
 li {
-    padding-right: 10px;
+    padding-right: 30px;
 }
 
 li a {
@@ -25,12 +41,35 @@ li a:hover {
     text-decoration: underline;
 }
 
-.float-left {
-    float: left;
+.google-app-btn {
+    margin: 7 30 0 0;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: transparent;
+    width: 30px;
+    height: 30px;
+    background-image: url(images/google_app.png);
 }
 
-.float-right {
-    float: right;
+.google-app-btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 15px;
+}
+
+.google-signin-btn {
+    padding: 10 20 10 20;
+    background-color: #93baf9;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    min-width: 96px;
+}
+
+.google-signin-btn:hover {
+    cursor: pointer;
+    filter: brightness(110%);
 }
 
 .flex-center {
@@ -42,6 +81,7 @@ li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     width: auto;
 }
 
